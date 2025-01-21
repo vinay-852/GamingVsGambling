@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game or Gamble Classifier</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Game or Gamble Classifier</h1>
+    <div class="input-container">
+        <input type="text" id="gameName" placeholder="Enter game name">
+        <button onclick="classifyGame()">Classify</button>
+    </div>
+    <div id="loading" class="hidden">Loading...</div>
+    <pre id="result"></pre>
+    <div class="animation-container">
+        <div class="animation"></div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
