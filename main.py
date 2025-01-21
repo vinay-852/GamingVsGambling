@@ -1,4 +1,5 @@
 from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
 from src.playstore import get_app_details
 from src.get_important_info import extract_important_info
 from src.gambling_or_gamming import extract_important_gg
@@ -8,6 +9,15 @@ import asyncio
 import json
 
 app = FastAPI()
+
+# Add CORS middleware
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # Allows all origins
+    allow_credentials=True,
+    allow_methods=["*"],  # Allows all methods
+    allow_headers=["*"],  # Allows all headers
+)
 
 @app.get("/classify")
 async def classify_game_gamble(game_name: str):
