@@ -1,10 +1,10 @@
 # GamingVsGambling
 
 ## Overview
-GamingVsGambling is a FastAPI-based application that classifies apps as either gaming or gambling based on their description, permissions, and user reviews from the Google Play Store. It uses Google Generative AI to analyze and extract important information from the app data.
+GamingVsGambling is a FastAPI-based application which classifies apps as either gaming or gambling based on their description, permissions, and user reviews from the Google Play Store. It uses Google's Generative AI(GEMINI LLM) to analyze and extract important information from the app data.
 
 ## Features
-- Fetch app details from the Google Play Store.
+- Fetch app details from the Google Play Store(Via Google Play Scraper library).
 - Analyze app descriptions, permissions, and reviews.
 - Classify apps as gaming or gambling with detailed explanations.
 
