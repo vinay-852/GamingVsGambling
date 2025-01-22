@@ -25,7 +25,7 @@ GamingVsGambling is a FastAPI-based application which classifies apps as either 
 2. Create and activate a virtual environment:
     ```sh
     python -m venv venv
-    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+source venv/bin/activate  # On Windows use `venv\Scripts\activate`
     ```
 
 3. Install the required packages:
@@ -36,9 +36,9 @@ GamingVsGambling is a FastAPI-based application which classifies apps as either 
 4. Set up environment variables:
     - Create a `.env` file in the root directory.
     - Add your Google Generative AI API Key:
-        ```
+```
         GEMINI_API_KEY=your_api_key_here
-        ```
+```
 
 ## Usage
 
@@ -53,7 +53,7 @@ GamingVsGambling is a FastAPI-based application which classifies apps as either 
 ### API Endpoint
 - **GET /classify**: Classify an app as gaming or gambling.
     - **Parameters**:
-        - `game_name` (str): The name of the app to classify.
+- `game_name` (str): The name of the app to classify.
     - **Response**:
         - `result` (json): The classification result with explanations.
 
