@@ -64,6 +64,14 @@ curl -X 'GET' \
   -H 'accept: application/json'
 ```
 
+## Deployment
+
+### Backend
+The backend is deployed at: [https://gamingvsgambling.onrender.com/](https://gamingvsgambling.onrender.com/)
+
+### Frontend
+The frontend is deployed at: [https://gamingvsgambling-1.onrender.com/](https://gamingvsgambling-1.onrender.com/)
+
 ## Contributing
 Contributions are welcome! Please open an issue or submit a pull request for any changes.
 
