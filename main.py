@@ -9,14 +9,12 @@ import asyncio
 import json
 
 app = FastAPI()
-
-# Add CORS middleware
 app.add_middleware(
+    allow_origins=["*"],
     CORSMiddleware,
-    allow_origins=["*"],  # Allows all origins
+    allow_headers=["*"],
     allow_credentials=True,
-    allow_methods=["*"],  # Allows all methods
-    allow_headers=["*"],  # Allows all headers
+    allow_methods=["*"],
 )
 
 @app.get("/classify")
